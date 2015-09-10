@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
 
 	public boolean isExist(String name) throws AppException {
 		// 操作标志
-		boolean flag = true;
+		boolean flag = false;
 		try {
 			// 定义hql语句，根据用户名查询记录数，？为占位符
 			String hql = "from User u where u.del=0 and u.name=?";
